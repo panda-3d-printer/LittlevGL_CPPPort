@@ -1,0 +1,58 @@
+#ifndef LVGLCPPPORT_H
+#define LVGLCPPPORT_H
+
+
+////////// CORE /////////////
+#include "./core/lvgroup.hpp"
+#include "./core/lvinputdevices.hpp"
+#include "./core/lvobject.hpp"
+#include "./core/lvstyle.hpp"
+#include "./core/lvsignalSlot.hpp"
+#include "./core/lvlang.hpp"
+
+
+/////////// MISC ///////////////
+#include "./misc/lvanimation.hpp"
+#include "./misc/lvarea.hpp"
+#include "./misc/lvlinklist.hpp"
+#include "./misc/lvtask.hpp"
+
+
+////////// OBJX /////////////
+#include "./objx/lvlabel.hpp"
+#include "./objx/lvpage.hpp"
+#include "./objx/lvbutton.hpp"
+#include "./objx/lvslider.hpp"
+#include "./objx/lvbar.hpp"
+#include "./objx/lvdropdownlist.hpp"
+#include "./objx/lvchart.hpp"
+#include "./objx/lvimage.hpp"
+#include "./objx/lvcontainer.hpp"
+#include "./objx/lvcheckbox.hpp"
+#include "./objx/lvmessagebox.hpp"
+#include "./objx/lvarc.hpp"
+#include "./objx/lvbuttonmatrix.hpp"
+#include "./objx/lvcalendar.hpp"
+#include "./objx/lvgauge.hpp"
+#include "./objx/lvlinemeter.hpp"
+#include "./objx/lvimagebutton.hpp"
+#include "./objx/lvkeyboard.hpp"
+#include "./objx/lvled.hpp"
+#include "./objx/lvline.hpp"
+#include "./objx/lvlist.hpp"
+#include "./objx/lvpreloader.hpp"
+#include "./objx/lvroller.hpp"
+#include "./objx/lvswitch.hpp"
+#include "./objx/lvtextarea.hpp"
+#include "./objx/lvtabview.hpp"
+#include "./objx/lvwindow.hpp"
+#include "./objx/lvcanvas.hpp"
+#include "./objx/lvspinbox.hpp"
+#include "./objx/lvtable.hpp"
+#include "./objx/lvtileview.hpp"
+
+
+///////// THEMES //////////
+#include "./themes/lvtheme.h"
+
+#endif // LVGLCPPPORT_H
