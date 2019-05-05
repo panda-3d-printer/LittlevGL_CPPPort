@@ -284,6 +284,12 @@ public:
     ////////////////// 增强功能 ////////////////////////
 
 //    lv_res_t onLangChanged(struct _lv_obj_t * obj, lv_signal_t sign, void * param);
+
+    void setValue(int32_t value);
+    void setValue(float value);
+    int32_t getIntValue();
+    float getFloatValue();
+
 };
 
 

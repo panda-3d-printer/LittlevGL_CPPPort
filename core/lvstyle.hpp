@@ -2,7 +2,7 @@
 #define LVSTYLE_H
 
 #include <lvgl/lv_core/lv_style.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 using LVStyleAnim = lv_style_anim_t;
 

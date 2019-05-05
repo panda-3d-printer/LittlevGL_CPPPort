@@ -2,7 +2,7 @@
 #define LVCOLOR_H
 
 #include <lvgl/lv_misc/lv_color.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 using LVColorHSV = lv_color_hsv_t;
 

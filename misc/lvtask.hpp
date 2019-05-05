@@ -3,7 +3,7 @@
 
 #include <lvgl/lv_misc/lv_task.h>
 #include <functional>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 
 /**

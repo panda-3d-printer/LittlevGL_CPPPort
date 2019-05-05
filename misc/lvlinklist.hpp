@@ -2,7 +2,7 @@
 #define LVLINKLIST_H
 
 #include <lvgl/lv_misc/lv_ll.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 using LVLLNode = lv_ll_node_t;
 

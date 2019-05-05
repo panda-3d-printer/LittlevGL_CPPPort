@@ -1,7 +1,7 @@
 #ifndef LVTHEME_H
 #define LVTHEME_H
 
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 #include <lvgl/lv_themes/lv_theme.h>
 #include <lvgl/lv_themes/lv_theme_alien.h>
 #include <lvgl/lv_themes/lv_theme_default.h>

@@ -16,6 +16,8 @@ HEADERS += \
     $$PWD/lv_examples/lv_tutorial/2_objects/lv_tutorial_objects.h \
     $$PWD/lv_examples/lv_tutorial/3_styles/lv_tutorial_styles.h \
     $$PWD/lv_examples/lv_tutorial/4_themes/lv_tutorial_themes.h \
+    $$PWD/misc/lvmath.h \
+    $$PWD/misc/lvmemory.hpp \
     $$PWD/themes/lvtheme.h \
     $$PWD/lv_examples/lv_tutorial/5_antialiasing/lv_tutorial_antialiasing.h \
     $$PWD/lv_examples/lv_tutorial/6_images/lv_tutorial_images.h \
@@ -80,8 +82,7 @@ HEADERS += \
     $$PWD/objx/lvchart.hpp \
     $$PWD/objx/lvcanvas.hpp \
     $$PWD/objx/lvcalendar.hpp \
-    $$PWD/objx/lvbuttonmatrix.hpp \
-    $$PWD/misc/lvmemory.h
+    $$PWD/objx/lvbuttonmatrix.hpp
 
 SOURCES += \
     $$PWD/lv_examples/lv_tutorial/1_hello_world/lv_tutorial_hello_world.cpp \
@@ -117,9 +118,11 @@ SOURCES += \
     $$PWD/lv_examples/lv_apps/tpcal/tpcal.cpp \
     $$PWD/lv_examples/lv_tests/lv_test_theme/lv_test_theme_1.cpp \
     $$PWD/lv_examples/lv_tests/lv_test_theme/lv_test_theme_2.cpp \
+    $$PWD/misc/lvmath.cpp \
     $$PWD/misc/lvtask.cpp \
     $$PWD/core/lvobject.cpp \
     $$PWD/core/lvsignalslot.cpp \
+    $$PWD/objx/lvbutton.cpp \
     $$PWD/objx/lvlabel.cpp \
     $$PWD/misc/lvmemory.cpp
 

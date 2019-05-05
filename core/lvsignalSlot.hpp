@@ -3,7 +3,7 @@
 
 #include <lvlinklist.hpp>
 #include <functional>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 
 class LVSignal;

@@ -5,6 +5,16 @@
 #include <lvgl/lv_objx/lv_btn.h>
 #include <functional>
 
+/**
+ * LVTask 可以接受的任务函数类型
+ *
+ * 增强了按钮的动作处理能力,
+ * 可以设置动作函数
+ * 或者子类化并实现动作函数
+ *
+ */
+using LVButtonAction = std::function<lv_res_t(struct _lv_obj_t * obj)>;
+
 class LVButton : public LVObject
 {
     LV_OBJECT
@@ -60,6 +70,8 @@ public:
     {
         lv_btn_set_action(m_this, type, action);
     }
+
+    void setAction(LVButtonAction action, lv_btn_action_t type);
 
     /**
     * Set the layout on a button
@@ -228,6 +240,26 @@ public:
     {
         return lv_btn_get_style(m_this,type);
     }
+
+    ///////////增强功能///////////////////////
+    //动作函数
+    virtual lv_res_t onClicked (struct _lv_obj_t * obj);
+    virtual lv_res_t onPressed (struct _lv_obj_t * obj);
+    virtual lv_res_t onLongPressed (struct _lv_obj_t * obj);
+    virtual lv_res_t onLongPressRepeat(struct _lv_obj_t * obj);
+
+    /**
+     * @brief 设置触发状态
+     */
+    void setChecked(bool value);
+
+    bool checked();
+
+protected:
+    LVButtonAction m_clickAction;
+    LVButtonAction m_pressAction;
+    LVButtonAction m_longPressAction;
+    LVButtonAction m_longPressRepeatAction;
 };
 
 #endif // LVBUTTON_H

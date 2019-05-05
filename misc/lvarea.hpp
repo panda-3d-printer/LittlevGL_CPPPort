@@ -2,7 +2,7 @@
 #define LVAREA_H
 
 #include <lvgl/lv_misc/lv_area.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 using Coord = lv_coord_t;
 

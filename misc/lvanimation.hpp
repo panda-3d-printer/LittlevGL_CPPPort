@@ -2,7 +2,7 @@
 #define LVANIMATION_H
 
 #include <lvgl/lv_misc/lv_anim.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 class LVAnimation
 {

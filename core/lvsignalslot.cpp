@@ -49,9 +49,9 @@ Connection::~Connection()
 }
 
 Connection::Connection(LVSignal *signal, LVSlot *slot, ConnectType type)
-    :m_signal0(signal)
+    :m_type(type)
+	,m_signal0(signal)
     ,m_slot(slot)
-    ,m_type(type)
 {
     if(isSignalSlotConnect())
     {

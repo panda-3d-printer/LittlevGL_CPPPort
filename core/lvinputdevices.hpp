@@ -2,7 +2,7 @@
 #define LVINPUTDEVICES_H
 
 #include <lvgl/lv_core/lv_indev.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 /**
  * @brief 输入设备

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <new>
 #include <lvgl/lv_core/lv_obj.h>
-#include <misc/lvmemory.h>
+#include <misc/lvmemory.hpp>
 
 //#define MAX_FREENUMBER 0XFFFFFFFF
 
