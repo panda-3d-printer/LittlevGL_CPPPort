@@ -13,6 +13,11 @@ void LVLabel::setText(const char *text, uint16_t textId)
     setTextID(textId);
 }
 
+void LVLabel::setValue(int16_t value)
+{
+    setText(itos(value));
+}
+
 void LVLabel::setValue(int32_t value)
 {
     setText(itos(value));

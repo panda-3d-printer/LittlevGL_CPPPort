@@ -197,6 +197,7 @@ public:
     void start()
     {
         lv_task_set_prio(m_this, m_priority);
+        reset();
     }
 
     void start(LVPriority prio)
@@ -277,7 +278,7 @@ public:
      * @param n 0~0xEFFFFFFF ; -1 表示无次数限制
      * @return
      */
-    int setTimes(int n = -1){ m_times = n; }
+    void setTimes(int n = -1){ m_times = n; }
 
     /**
      * @brief 任务的剩余运行次数

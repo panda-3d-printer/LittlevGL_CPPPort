@@ -160,7 +160,6 @@ public:
         emit();
     }
 
-
     void * param()
     {
         return m_param;
@@ -185,8 +184,6 @@ protected:
 
     void removeConnection(Connection * connection);
 };
-
-
 
 /**
  * @brief 槽对象
@@ -235,7 +232,8 @@ public:
 
     void operator()(LVSignal * signal)
     {
-        m_slotFunc(signal);
+    	if(m_slotFunc != nullptr)
+    		m_slotFunc(signal);
     }
 
     bool isConnected()

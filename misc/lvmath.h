@@ -44,7 +44,7 @@ char * itos(int32_t value);
  * @param value
  * @return
  */
-char * ftos(float value);
+char * ftos(float value, uint32_t precision = 3);
 
 /**
  * @brief 字符串转整数

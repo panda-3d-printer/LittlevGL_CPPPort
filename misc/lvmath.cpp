@@ -10,14 +10,14 @@ char * itos(int32_t value)
     return tempStr;
 }
 
-char * ftos(float value)
+char * ftos(float value , uint32_t precision)
 {
     int vv = value*1000;
-     if(vv%10)
+     if(vv%10 && precision >= 3)
          sprintf(tempStr, "%.3f", value);
-     else if(vv%100)
+     else if(vv%100 && precision >= 2)
              sprintf(tempStr, "%.2f", value);
-     else if(vv%1000)
+     else if(vv%1000 && precision >= 1)
              sprintf(tempStr, "%.1f", value);
      else
          sprintf(tempStr, "%.0f", value);
